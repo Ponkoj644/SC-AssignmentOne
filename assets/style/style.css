@@ -243,12 +243,12 @@ body {
 }
 .about-us .our-details .details-cards .card {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5px;
+
   text-align: start;
   display: flex;
   flex-direction: column;
-  
+
   /* padding: 20px; */
 }
 
@@ -259,23 +259,20 @@ body {
 
 .about-us .our-details .details-cards .card:nth-child(1) {
   grid-column: span 3;
-
 }
 .about-us .our-details .details-cards .card:nth-child(2) {
   grid-column: span 4;
-
   margin-top: 10.5rem;
+  aspect-ratio: 1/1;
 }
 .about-us .our-details .details-cards .card:nth-child(3) {
   grid-column: span 5;
-
 }
 
 .about-us .our-details .details-cards .card img {
   width: 100%;
   border-radius: 0.75rem;
   object-fit: cover;
-  /* margin-bottom: 15px; */
 }
 
 .hide {
