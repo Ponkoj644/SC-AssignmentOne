@@ -1,0 +1,223 @@
+/* FONTS */
+
+/* ROOT CSS */
+
+:root {
+  --white: #ffffff;
+  --gray-900: #18181b;
+  --gray-500: #70707b;
+}
+
+/* GENERAL CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Satoshi", sans-serif;
+  background-color: var(--white);
+}
+
+/* CUSTOM CLASSES */
+
+.container {
+  padding: 0 5rem;
+  margin: 0 auto;
+  /* background: #000; */
+}
+
+.main-heading {
+  /* font-size: 6.5rem; */
+  font-size: clamp(2rem, 0.3118rem + 7.0022vw, 6.5rem);
+  /* font-size: clamp(2.5rem, 1.3571rem + 5.7143vw, 6.5rem); */
+  color: var(--white);
+  font-weight: 400;
+  /* line-height: 7.15rem; */
+  line-height: calc(clamp(2.5rem, 0.3118rem + 7.0022vw, 6.5rem));
+  white-space: nowrap;
+}
+
+.main-heading span {
+  font-weight: 700;
+}
+
+.section-heading {
+  color: var(--gray-900);
+  font-size: 3.25rem;
+  font-weight: 400;
+  line-height: 3.9rem;
+  letter-spacing: -2%;
+}
+
+.section-paragraph {
+  color: var(--gray-500);
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.937rem;
+}
+
+.btn-primary {
+  padding: 0.625rem 1.406rem;
+  background: var(--gray-900);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.55rem;
+  border-radius: 0.75rem;
+  text-transform: capitalize;
+}
+
+.btn-secondary {
+  padding: 0.625rem 1.125rem;
+  background: var(--white);
+  color: var(--gray-900);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.55rem;
+  border-radius: 0.75rem;
+  text-transform: capitalize;
+}
+
+/* HEADER SECTION START */
+.header-area {
+  background-image: url("/assets/Images/hero_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header-area::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #000000ed, transparent 93%);
+  z-index: -1;
+}
+
+.header-area::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000ed, transparent 20%);
+  z-index: -1;
+}
+
+.header-area .navbar {
+  padding: 1.656rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: 9999; */
+}
+
+.header-area .logo {
+}
+.header-area .menu {
+}
+
+.header-area .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: .5rem; */
+}
+.header-area .menu ul li a {
+  color: var(--white);
+  font-size: 0.875rem;
+  line-height: 1.356rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.header-area .menu-icon {
+  display: none;
+}
+
+.header-area .header_content {
+  height: 100vh;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: end;
+}
+.header-area .header_content .text-block {
+  width: 80%;
+}
+.header-area .header_content .img-block {
+  width: 20%;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background-color: #ffffff43;
+}
+.header-area .header_content .img-block .img-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.header-area .header_content .img-block .img-wraper img {
+  width: 100%;
+}
+/* HEADER SECTION END */
+
+/* ABOUT US SECTION START */
+
+.about-us {
+}
+.about-us .container {
+  margin: 5rem 0;
+}
+
+.about-us .contents {
+  display: flex;
+  /* align-items: center; */
+  gap: 6.8rem;
+  justify-content: flex-start;
+}
+
+.about-us .contents .left-block {
+  min-width: 40%;
+  /* flex-basis: 1; */
+}
+
+.about-us .contents .left-block button {
+  margin-top: 2rem;
+}
+
+.about-us .contents .right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* ABOUT US SECTION END */
