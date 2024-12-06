@@ -2,6 +2,10 @@
   .container {
     padding: 0 1.25rem;
   }
+  .section-heading {
+    line-height: 2.4rem;
+    /* font-size: 2rem; */
+  }
 
   .header-area .menu,
   .conttact-btn,
@@ -12,6 +16,31 @@
   .header-area .navbar .menu-icon {
     display: block;
     cursor: pointer;
+  }
+
+  .about-us .container {
+    margin: 3.75rem 0;
+  }
+
+  .about-us .contents {
+    display: inherit;
+  }
+
+  .about-us .contents .left-block {
+    width: 100%;
+  }
+  .about-us .contents .left-block button {
+    margin: 1.5rem 0;
+  }
+
+  .about-us .contents .right-block {
+    gap: 1.5rem;
+  }
+
+  .about-us .our-details .details-cards .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    grid-column: span 12;
   }
 }
 
@@ -30,6 +59,10 @@
     padding: 0 2.5rem;
   }
 
+  .section-heading {
+    line-height: 3rem;
+  }
+
   .header-area .menu,
   .conttact-btn,
   .img-block {
@@ -40,15 +73,67 @@
     display: block;
     cursor: pointer;
   }
+
+  .about-us .contents {
+    display: inherit;
+  }
+
+  .about-us .contents .left-block button {
+    margin: 2rem 0;
+  }
+
+  .about-us .our-details .details-cards .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    grid-column: span 12;
+  }
+
+  /* .about-us .contents{
+    display: inherit;
+  }
+
+  .about-us .contents .left-block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-us .section-heading{
+    line-height: 3rem;
+    width: 77.83%;
+  } */
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .container {
     padding: 0 3.75rem;
   }
+
+  .about-us .contents {
+    display: inherit;
+  }
+
+  .about-us .contents .left-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-us .contents .right-block {
+  }
+
+  .about-us .section-heading {
+    /* font-size: 40px; */
+    line-height: 3rem;
+    width: 75%;
+    /* white-space: nowrap; */
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
 }
 
 /* @media screen and (max-width: 768px) {
