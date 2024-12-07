@@ -63,6 +63,7 @@ body {
   color: var(--gray-900);
   /* font-size: 3.25rem; */
   font-size: clamp(2rem, 1.5833rem + 2.0833vw, 3.25rem);
+
   font-weight: 400;
   line-height: 3.9rem;
   /* line-height: calc(clamp(3.25rem, 1.5833rem + 2.0833vw, 2rem)); */
@@ -275,8 +276,162 @@ body {
   object-fit: cover;
 }
 
+/* ABOUT US SECTION END */
+
+/* PROPERTY LSTING SECTION SRART */
+.property-listing {
+}
+.property-listing .container {
+  margin: 5rem 0;
+}
+
+.property-listing .section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.property-listing .section-head h3 {
+  white-space: nowrap;
+}
+
+.property-listing .section-head p {
+  width: 570px;
+}
+
+.property-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.property-container .property-card {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-container .property-card img {
+  width: 100%;
+  height: 21.25rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.property-container .property-card .property-tags {
+  position: absolute;
+  display: flex;
+  gap: .5rem;
+  top: 10px;
+  right: 10px;
+}
+
+.property-container .property-card .property-tags span {
+  background: var(--gray-900);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1%;
+  padding: .5rem .75rem;
+  border-radius:1.375rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.property-container .property-card .property-tags span img{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.property-container .property-content {
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.property-container .property-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.property-container .property-content p {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+}
+
+.property-container .property-content .property-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property-container .property-content .property-name-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property-container .property-content .property-name h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.property-container .property-content .property-name p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.property-container .property-content .property-name img {
+  width: 20px;
+  height: 20px;
+}
+
+.property-container .property-content .property-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.property-container .property-content .property-price .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  color: var(--gray-900);
+}
+
+.property-container .property-content .property-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.property-container .property-content .property-info img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.property-container .property-content hr {
+  display: block;
+  height: 1.5px;
+  border-top: 1px solid #e4e4e7;
+  margin: 1em 0;
+}
+
+/* PROPERTY LSTING SECTION END */
+
 .hide {
   display: none;
 }
-
-/* ABOUT US SECTION END */
