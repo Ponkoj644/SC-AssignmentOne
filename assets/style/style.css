@@ -628,7 +628,93 @@ body {
 .insights .pagination .arrow img {
   cursor: pointer;
 }
-/* TIPS & INSIGHTS SECTION CSS end */
+/* TIPS & INSIGHTS SECTION CSS END */
+
+/* CONTACT US SECTION CSS START */
+.contact-us {
+  background-image: url("/assets/Images/contact-bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin: 2.5rem 1rem;
+  color: #ffffff;
+  border-radius: 2.25rem;
+}
+
+.contact-us::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000ed;
+  opacity: 0.7;
+  z-index: -1;
+  border-radius: 2.25rem;
+}
+
+.contact-us .container {
+  padding: 6.87rem 3.5rem;
+}
+.contact-us .contact-us-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-us .contact-us-wraper .left-side {
+  width: 50%;
+  max-width: 500px;
+}
+.contact-us .contact-us-wraper .right-side {
+  width: 40%;
+}
+.contact-us .contact-us-wraper .right-side form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+}
+
+.contact-us .contact-us-wraper .right-side form input {
+  padding: 10px 0;
+  border: none;
+}
+
+.contact-us .contact-us-wraper .right-side form input:focus {
+  outline: none;
+  border-right: 3px solid var(--gray-500);
+}
+
+.contact-us .contact-us-wraper .right-side form input::placeholder {
+  color: var(--gray-900);
+  font-weight: 500;
+  line-height: 24.8px;
+}
+
+.contact-us .contact-us-wraper .right-side form textarea {
+  padding: 10px;
+  border: 0.5px solid #e4e4e7;
+}
+
+.contact-us .contact-us-wraper .right-side form textarea:focus {
+  outline: none;
+  border-right: 3px solid var(--gray-500);
+}
+
+.contact-us .contact-us-wraper .right-side form textarea::placeholder {
+}
+
+.contact-us .send-btn {
+  display: block;
+  width: 100%;
+}
+
+/* CONTACT US SECTION CSS END */
 
 .hide {
   display: none;
