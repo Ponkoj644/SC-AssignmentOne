@@ -315,6 +315,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .property-container .property-card img {
@@ -428,10 +429,96 @@ body {
   display: block;
   height: 1.5px;
   border-top: 1px solid #e4e4e7;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
+.property-listing .view-more {
+  /* width: 20%; */
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* PROPERTY LSTING SECTION END */
+
+/* FAQ SECTION START */
+
+.faq-section {
+}
+
+.faq-section .faq-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.faq-section .faq-content .left-side {
+  width: 50%;
+}
+.faq-section .faq-content .left-side h3 {
+  margin-bottom: 1.5rem;
+}
+.faq-section .faq-content .left-side p {
+  margin-bottom: 3.5rem;
+}
+.faq-section .faq-content .left-side img {
+  width: 100%;
+  margin-bottom: 1.875rem;
+  border-radius: 0.75rem;
+}
+.faq-section .faq-content .right-side {
+  width: 60%;
+}
+.faq-section .faq-content .right-side .faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.faq-section .faq-content .right-side .faq-list .faq-item {
+  background: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.faq-section .faq-content .right-side .faq-list .faq-item h3 {
+  font-size: 1.125rem;
+  line-height: 1.743rem;
+  color: var(--gray-500);
+  flex: 1;
+}
+
+.faq-section .faq-content .right-side .faq-list .faq-item span {
+  color: var(--gray-500);
+  font-size: 1.5rem;
+}
+.faq-section .faq-content .right-side .faq-list .faq-item.expanded {
+  background: #fafafa;
+}
+
+.faq-section .faq-content .right-side .faq-list .faq-item.expanded {
+  display: block;
+}
+
+.faq-section .faq-content .right-side .faq-list .faq-item.expanded h3 {
+  color: var(--gray-900);
+}
+
+.faq-section .faq-content .right-side .faq-list .faq-item.expanded p {
+  margin: 1rem 0;
+}
+.faq-section
+  .faq-content
+  .right-side
+  .faq-list
+  .faq-item.expanded
+  .expanded-content {
+  display: flex;
+}
+
+/* FAQ SECTION END */
 
 .hide {
   display: none;
