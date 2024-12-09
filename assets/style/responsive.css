@@ -86,30 +86,13 @@
     grid-template-columns: 1fr;
   }
 
-      /* FAQ SECTION CSS */
+  .insights .section-head {
+    display: inherit;
+  }
 
-      .faq-section {
-      }
-    
-      .faq-section .faq-content {
-        display: inherit;
-      }
-    
-      .faq-section .faq-content .left-side {
-        width: 100%;
-      }
-    
-      .faq-section .faq-content .right-side {
-        width: 100%;
-      }
-    
-      .faq-section .faq-content .left-side .faq-img {
-        display: none;
-      }
-    
-      .faq-section .faq-content .right-side .faq-list .faq-item {
-        padding: 1rem 0;
-      }
+  .insights .carousel-card {
+    flex: 0 0 calc(100% - 20px); /
+  }
 }
 
 /* @media (min-width: 320px) and (max-width: 575px) {
@@ -202,6 +185,16 @@
     padding: 1rem 0;
   }
 
+  /* Tips & insights */
+
+  .insights .section-head {
+    display: inherit;
+  }
+
+  .insights .carousel-card {
+    flex: 0 0 calc(100% - 20px);
+  }
+
   /* .about-us .contents{
     display: inherit;
   }
@@ -246,33 +239,54 @@
     /* white-space: nowrap; */
   }
 
-    /* FAQ SECTION CSS */
+  /* FAQ SECTION CSS */
 
-    .faq-section {
-    }
-  
-    .faq-section .faq-content {
-      display: inherit;
-    }
-  
-    .faq-section .faq-content .left-side {
-      width: 100%;
-    }
-  
-    .faq-section .faq-content .right-side {
-      width: 100%;
-    }
-  
-    .faq-section .faq-content .left-side .faq-img {
-      display: none;
-    }
-  
-    .faq-section .faq-content .right-side .faq-list .faq-item {
-      padding: 1rem 0;
-    }
+  .faq-section {
+  }
+
+  .faq-section .faq-content {
+    display: inherit;
+  }
+
+  .faq-section .faq-content .left-side {
+    width: 100%;
+  }
+
+  .faq-section .faq-content .right-side {
+    width: 100%;
+  }
+
+  .faq-section .faq-content .left-side .faq-img {
+    display: none;
+  }
+
+  .faq-section .faq-content .right-side .faq-list .faq-item {
+    padding: 1rem 0;
+  }
+
+  /* Tips & insight */
+
+  .insights .section-head {
+    display: inherit;
+  }
+
+  .insights .carousel-card {
+    flex: 0 0 calc(50% - 20px); /* Show two cards per row */
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .insights .section-head {
+  }
+  .insights .section-head h3 {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .insights .section-head h3 {
+    white-space: nowrap;
+  }
 }
 
 /* @media screen and (max-width: 768px) {
