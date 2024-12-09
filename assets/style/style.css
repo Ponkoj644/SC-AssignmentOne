@@ -699,6 +699,7 @@ body {
 .contact-us .contact-us-wraper .right-side form input {
   padding: 10px 0;
   border: none;
+  width: 100%;
 }
 
 .contact-us .contact-us-wraper .right-side form input:focus {

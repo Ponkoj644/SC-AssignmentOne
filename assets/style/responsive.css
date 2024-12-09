@@ -86,6 +86,28 @@
     grid-template-columns: 1fr;
   }
 
+  /* FAQ Section */
+  .faq-section .faq-content {
+    display: inherit;
+  }
+
+  .faq-section .faq-content .left-side {
+    width: 100%;
+  }
+
+  .faq-section .faq-content .right-side {
+    width: 100%;
+  }
+
+  .faq-section .faq-content .left-side .faq-img {
+    display: none;
+  }
+
+  .faq-section .faq-content .right-side .faq-list .faq-item {
+    padding: 1rem 0;
+  }
+
+  /* Tips & insight section */
   .insights .section-head {
     display: inherit;
   }
@@ -93,8 +115,33 @@
   .insights .carousel-card {
     flex: 0 0 calc(100% - 20px); /
   }
+
+  /* Contact Us Section CSS */
+
+  .contact-us .container{
+    padding: 40px 20px;
+  }
+  .contact-us .contact-us-wraper{
+    display: inherit;
+  }
+  .contact-us .contact-us-wraper .left-side {
+    width:100%;
+
+}
+.contact-us .contact-us-wraper .left-side h3{
+  line-height: 48px;
 }
 
+.contact-us .contact-us-wraper .left-side p{
+  margin-bottom: 40px;
+}
+
+.contact-us .contact-us-wraper .right-side {
+  width:100%;
+
+}
+
+}
 /* @media (min-width: 320px) and (max-width: 575px) {
   .header-area .header_content .img-block {
     display: none;
@@ -194,6 +241,31 @@
   .insights .carousel-card {
     flex: 0 0 calc(100% - 20px);
   }
+
+  /* contact us CSS */
+
+  .contact-us .container{
+    padding: 40px;
+  }
+  .contact-us .contact-us-wraper{
+    display: inherit;
+  }
+  .contact-us .contact-us-wraper .left-side {
+    width:100%;
+
+}
+.contact-us .contact-us-wraper .left-side h3{
+  line-height: 56px;
+}
+
+.contact-us .contact-us-wraper .left-side p{
+  margin-bottom: 40px;
+}
+
+.contact-us .contact-us-wraper .right-side {
+  width:100%;
+
+}
  
   /* .about-us .contents{
     display: inherit;
