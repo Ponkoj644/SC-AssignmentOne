@@ -251,24 +251,18 @@ body {
 .about-us .about_future {
   margin-top: 3.5rem;
   display: flex;
+  margin-bottom: 5rem;
 
   align-items: start;
   justify-content: space-between;
   gap: 3rem;
   height: auto;
-  /* width: 100vh; */
 }
-.about-us .about_future .text-block {
-}
+
 .about-us .about_future .text-block,
 .about-us .about_future .image_block {
   width: 50%;
 }
-/* .about-us .about_future .text-block h3 {
-  font-size: 3.25rem;
-  font-weight: 400;
-  line-height: 3.9rem;
-} */
 
 .about-us .about_future .section-paragraph {
   margin-top: 1.25rem;
@@ -278,6 +272,30 @@ body {
 }
 .about-us .about_future .image_block img {
   width: 100%;
+}
+
+/* BRANDED BANKS */
+.about-us .about_brands {
+  padding: 5rem 0;
+}
+.about-us .about_brands .brand_text {
+  margin-bottom: 3rem;
+}
+.about-us .about_brands .brand_text h3 {
+  font-size: clamp(2rem, 1.7975rem + 1.0127vw, 2.5rem);
+  font-weight: 500;
+  line-height: 3rem;
+  text-align: center;
+}
+.about-us .about_brands .brand_img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.about-us .about_brands .brand_img img {
+  width: 180px;
 }
 
 /* FAQ SECTION START */
@@ -489,6 +507,7 @@ body {
     cursor: pointer;
   }
 
+  /* ABOUT US */
   .about-us .container {
     margin: 3.75rem 0;
   }
@@ -520,6 +539,12 @@ body {
   .about-us .about_future .text-block,
   .about-us .about_future .image_block {
     width: 100%;
+  }
+  .about-us .about_brands .brand_img {
+    justify-content: center;
+  }
+  .about-us .about_brands .brand_img img {
+    width: 110px;
   }
 
   /* FOOTER AREA */
@@ -575,6 +600,7 @@ body {
     cursor: pointer;
   }
 
+  /* ABOUT US */
   .about-us .contents {
     display: inherit;
   }
@@ -593,6 +619,13 @@ body {
 
   .about-us .about_future .image_block img {
     margin-top: 3rem;
+  }
+
+  .about-us .about_brands .brand_img {
+    justify-content: start;
+  }
+  .about-us .about_brands .brand_img img {
+    width: 110px;
   }
 
   /* FAQ SECTION CSS */
