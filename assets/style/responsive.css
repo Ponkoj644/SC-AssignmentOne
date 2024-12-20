@@ -29,9 +29,6 @@
   .about-us .contents .left-block {
     width: 100%;
   }
-  .about-us .contents .left-block button {
-    margin: 1.5rem 0;
-  }
 
   .about-us .contents .right-block {
     gap: 1.5rem;
@@ -69,15 +66,7 @@
     gap: 1.5rem;
   }
 }
-/* @media (min-width: 320px) and (max-width: 575px) {
-  .header-area .header_content .img-block {
-    display: none;
-  }
 
-  .container {
-    padding: 0 1.25rem;
-  }
-} */
 
 @media (min-width: 576px) and (max-width: 768px) {
   .container {
@@ -102,8 +91,6 @@
   .about-us .contents {
     display: inherit;
   }
-
-
 
   /* FAQ SECTION CSS */
 
@@ -142,21 +129,6 @@
     flex-direction: row;
     justify-content: start;
   }
-
-  /* .about-us .contents{
-    display: inherit;
-  }
-
-  .about-us .contents .left-block{
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .about-us .section-heading{
-    line-height: 3rem;
-    width: 77.83%;
-  } */
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -176,8 +148,6 @@
     justify-content: space-between;
     margin-bottom: 1.2rem;
   }
-
-
 
   /* FAQ SECTION CSS */
 

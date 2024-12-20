@@ -298,6 +298,83 @@ body {
   width: 180px;
 }
 
+/* Client Says */
+.about-us .client_says {
+  padding: 5rem 0;
+}
+
+.about-us .client_says .contents {
+  gap: 9.563rem;
+  margin-bottom: 6rem;
+}
+
+.about-us .client_says .contents .left-block {
+  min-width: 30%;
+}
+
+.about-us .client_says .section-paragraph p {
+  min-width: 45%;
+}
+
+.about-us .client_says_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about-us .client_says_details .text_block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.about-us .client_says_details .text_block .section-paragraph {
+  max-width: 460px;
+}
+
+.about-us .client_says_details .text_block img {
+  width: 32px;
+  height: 32px;
+}
+.about-us .client_says_details .text_block h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 38.4px;
+  color: var(--gray-900);
+}
+
+.about-us .client_says_details .text_block h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24.8px;
+}
+
+.about-us .client_says_details .text_block .carousel_pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.about-us .client_says_details .text_block .carousel_pagination span {
+  width: 53px;
+  height: 4px;
+  background-color: #e4e4e7;
+  border-radius: 4px;
+}
+
+.about-us
+  .client_says_details
+  .text_block
+  .carousel_pagination
+  span:nth-child(1) {
+  background-color: var(--gray-900);
+}
+.about-us .client_says_details .image_block img {
+  width: 100%;
+  border-radius: 12px;
+}
+
 /* FAQ SECTION START */
 
 .faq-section {
@@ -547,6 +624,44 @@ body {
     width: 110px;
   }
 
+  .about-us .client_says_details {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .about-us .client_says_details .text_block .section-paragraph {
+    max-width: 100%;
+  }
+
+  .about-us .client_says_details .image_block {
+    margin-top: 56px;
+    width: 100%;
+  }
+
+  /* FAQ AREA */
+  .faq-section {
+  }
+
+  .faq-section .faq-content {
+    display: inherit;
+  }
+
+  .faq-section .faq-content .left-side {
+    width: 100%;
+  }
+
+  .faq-section .faq-content .right-side {
+    width: 100%;
+  }
+
+  .faq-section .faq-content .left-side .faq-img {
+    display: none;
+  }
+
+  .faq-section .faq-content .right-side .faq-list .faq-item {
+    padding: 1rem 0;
+  }
+
   /* FOOTER AREA */
 
   .footer-area .footer-wrapper {
@@ -626,6 +741,21 @@ body {
   }
   .about-us .about_brands .brand_img img {
     width: 110px;
+  }
+
+  
+  .about-us .client_says_details {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .about-us .client_says_details .text_block .section-paragraph {
+    max-width: 100%;
+  }
+
+  .about-us .client_says_details .image_block {
+    margin-top: 56px;
+    width: 100%;
   }
 
   /* FAQ SECTION CSS */
