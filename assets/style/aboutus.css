@@ -34,6 +34,7 @@ body {
   margin: 0 auto;
   font-family: "Satoshi", sans-serif;
   background-color: var(--white);
+  overflow-x: hidden;
 }
 
 /* CUSTOM CLASSES */
@@ -147,6 +148,17 @@ body {
 
 .header-area .menu-icon {
   display: none;
+}
+
+.header-area .mobile_navbar {
+  padding: 1.656rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  align-items: start;
+  justify-content: flex-end;
+  z-index: 999;
 }
 
 .header-area .header_content {
@@ -584,6 +596,46 @@ body {
     cursor: pointer;
   }
 
+  .header-area .mobile_navbar {
+    /* background-color: var(--white); */
+    /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+  }
+
+  .header-area .mobile_navbar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .header-area .mobile_navbar li {
+    height: 50px;
+    width: 100%;
+  }
+
+  .header-area .mobile_navbar a {
+    height: 100%;
+    /* padding: 0 30px; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--gray-900);
+  }
+
+  .header-area .mobile_navbar .btn-primary {
+    color: var(--white);
+  }
+
+  .header-area .mobile_navbar a:hover {
+    background-color: #f0f0f0f0;
+  }
+
   /* ABOUT US */
   .about-us .container {
     margin: 3.75rem 0;
@@ -743,7 +795,6 @@ body {
     width: 110px;
   }
 
-  
   .about-us .client_says_details {
     flex-direction: column;
     align-items: start;
@@ -881,3 +932,5 @@ body {
 .hide {
   display: none;
 }
+
+/* 8min 24 sec */

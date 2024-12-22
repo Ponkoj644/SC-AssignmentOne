@@ -33,7 +33,7 @@
       <div class="container">
         <nav class="navbar">
           <div class="logo">
-            <a href="#">
+            <a href="/">
               <img src="/assets/Images/logo_2.png" alt="Logo" />
             </a>
           </div>
@@ -41,10 +41,10 @@
           <div class="menu">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="./abotus.html">About us</a>
               </li>
               <li>
                 <a href="#">Property</a>
@@ -64,10 +64,40 @@
             <a href="" class="btn-primary">Contact Us</a>
           </div>
 
-          <div class="menu-icon">
-            <img src="./assets/Images/hambarger.png" alt="" />
+          <div onclick="showMobileMenu()" class="menu-icon">
+            <img src="/assets/Images/hambarger_blac.png" alt="" />
           </div>
         </nav>
+
+        <div class="mobile_navbar">
+          <ul>
+            <li onclick="hideMobileMenu()">
+              <img src="/assets/Images/close_img.png" alt="Close" />
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="./abotus.html">About us</a>
+            </li>
+            <li>
+              <a href="#">Property</a>
+            </li>
+            <li>
+              <a href="#">Agent</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">FAQ's</a>
+            </li>
+
+            <li>
+              <a class="btn-primary" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- HEADER END -->
@@ -372,5 +402,18 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
+    <!-- JS FOR MOBILE NAVBAR -->
+    <script>
+      function showMobileMenu() {
+        const mobileMenu = document.querySelector(".mobile_navbar");
+        mobileMenu.style.display = "flex";
+      }
+
+      function hideMobileMenu() {
+        const mobileMenu = document.querySelector(".mobile_navbar");
+        mobileMenu.style.display = "none";
+      }
+    </script>
   </body>
 </html>
